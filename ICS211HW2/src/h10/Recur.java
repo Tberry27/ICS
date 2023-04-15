@@ -96,8 +96,14 @@ public class Recur {
     // if the list is empty, return null
     // otherwise add node.item at the end of the reversed node.next
     public LinkedNode reverse(LinkedNode node) {
-        // to do
-    	return null;
+    	if (node==null) {
+    		return null;
+    		
+    	}else {
+    		node.next = reverse(node.next);
+    		//2 more lines
+    	}
+    	return node.next;
     }
 
     
@@ -107,18 +113,30 @@ public class Recur {
     // followed by a ", " if this is not the last node in the list
     // then print the rest of the list
     public void printList(LinkedNode node) {
-        // to do
+    	if(node== null) {
+    		System.out.print("");
+    	}else if (node.next == null) {
+    		System.out.print(node.item);
+    	}else {
+    		
+    	}
     }
 
     // same as printList, but return the result as a string
     public String listToString(LinkedNode node) {
-        // to do
-    	return "";
+        if (node== null) {
+        	System.out.print("");
+        }else if(node.next == null){
+        	return epty stirn gand node.item
+        }
     }
 
     // runtime exponential in n
-    public static void exponential(int n) {
-        // to do
+    public static int exponential(int n) {
+    	if(n<= 2) {
+    		return 1;
+    	}
+    	return exponential(n-2)+ exponential(n-1);
     }
 
     public static void main(String[] a) {
