@@ -25,6 +25,8 @@ public class QueueSimulator {
 			return this.arrivalTime - cust.arrivalTime;
 		}
 	}
+	
+	
 
 	private class Server {
 		int finishTime;
