@@ -1,8 +1,8 @@
 package h04;
 
-//import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-//import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Test;
 
 public class DriverSortedArrayList {
 	public static void main(String[] args) {

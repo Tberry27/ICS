@@ -1,0 +1,44 @@
+First run(java Recur):
+
+length of random list is 3, 1 half or over
+last of random list is 0.09013924938461249
+list   : 0.6285300575200764, 0.13045898196460637, 0.09013924938461249
+again  : 0.6285300575200764, 0.13045898196460637, 0.09013924938461249
+reverse: 0.09013924938461249, 0.13045898196460637, 0.6285300575200764
+length of random list is 0, 0 half or over
+length of random list is 0, 0 half or over
+length of random list is 7, 3 half or over
+length of random list is 2, 0 half or over
+length of random list is 2, 1 half or over
+length of random list is 4, 2 half or over
+length of random list is 6, 4 half or over
+length of random list is 6, 4 half or over
+length of random list is 5, 5 half or over
+average length of random list is 3.5
+average halves in random list is 2.0
+exponential(20) takes time 0
+exponential(21) takes time 0
+exponential(22) takes time 0
+exponential(23) takes time 1
+exponential(24) takes time 0
+exponential(25) takes time 0
+exponential(26) takes time 0
+exponential(27) takes time 0
+exponential(28) takes time 1
+exponential(29) takes time 1
+exponential(30) takes time 2
+exponential(31) takes time 3
+exponential(32) takes time 6
+exponential(33) takes time 8
+exponential(34) takes time 12
+exponential(35) takes time 27
+exponential(36) takes time 31
+exponential(37) takes time 53
+exponential(38) takes time 95
+exponential(39) takes time 157
+exponential(40) takes time 201
+exponential(41) takes time 332
+exponential(42) takes time 664
+exponential(43) takes time 1023
+exponential(44) takes time 1724
+exponential(45) takes time 2912

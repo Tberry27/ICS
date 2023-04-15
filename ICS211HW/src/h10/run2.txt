@@ -1,0 +1,44 @@
+Second run(java Recur  0.1):
+
+length of random list is 11, 7 half or over
+last of random list is 0.880927156999325
+list   : 0.41272311051991817, 0.07430877289062932, 0.2523699105294007, 0.29742089539751493, 0.6048787217003132, 0.7162507896233463, 0.8997416413107141, 0.7350723224325614, 0.7982636466397534, 0.9271173269303294, 0.880927156999325
+again  : 0.41272311051991817, 0.07430877289062932, 0.2523699105294007, 0.29742089539751493, 0.6048787217003132, 0.7162507896233463, 0.8997416413107141, 0.7350723224325614, 0.7982636466397534, 0.9271173269303294, 0.880927156999325
+reverse: 0.880927156999325, 0.9271173269303294, 0.7982636466397534, 0.7350723224325614, 0.8997416413107141, 0.7162507896233463, 0.6048787217003132, 0.29742089539751493, 0.2523699105294007, 0.07430877289062932, 0.41272311051991817
+length of random list is 1, 0 half or over
+length of random list is 14, 5 half or over
+length of random list is 24, 16 half or over
+length of random list is 20, 12 half or over
+length of random list is 10, 6 half or over
+length of random list is 3, 2 half or over
+length of random list is 8, 3 half or over
+length of random list is 11, 8 half or over
+length of random list is 14, 7 half or over
+average length of random list is 11.6
+average halves in random list is 6.6
+exponential(20) takes time 0
+exponential(21) takes time 0
+exponential(22) takes time 0
+exponential(23) takes time 1
+exponential(24) takes time 0
+exponential(25) takes time 0
+exponential(26) takes time 0
+exponential(27) takes time 1
+exponential(28) takes time 1
+exponential(29) takes time 1
+exponential(30) takes time 2
+exponential(31) takes time 4
+exponential(32) takes time 5
+exponential(33) takes time 9
+exponential(34) takes time 14
+exponential(35) takes time 23
+exponential(36) takes time 33
+exponential(37) takes time 55
+exponential(38) takes time 97
+exponential(39) takes time 153
+exponential(40) takes time 204
+exponential(41) takes time 319
+exponential(42) takes time 634
+exponential(43) takes time 1056
+exponential(44) takes time 1634
+exponential(45) takes time 2766

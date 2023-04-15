@@ -1,4 +1,4 @@
-/*package h06;
+package h06;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -41,4 +41,4 @@ class ArrayListIteratorTest {
 			i++;
 		}
 	}
-}*/
+}

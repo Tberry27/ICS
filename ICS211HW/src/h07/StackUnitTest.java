@@ -1,4 +1,4 @@
-/*package h07;
+package h07;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.EmptyStackException;
@@ -102,4 +102,4 @@ class StackUnitTest {
 		}
 		return true;
 	}
-}*/
+}
