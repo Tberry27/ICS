@@ -16,6 +16,7 @@ public class Sudoku {
 	 * @return true if this sudoku obeys all of the sudoku rules, otherwise false
 	 */
 	public static boolean checkSudoku(int[][] sudoku, boolean printErrors) {
+		
 		if (sudoku.length != 9) {
 			if (printErrors) {
 				System.out.println("sudoku has " + sudoku.length + " rows, should have 9");
@@ -115,7 +116,7 @@ public class Sudoku {
 		}
 		return "illegal sudoku";
 	}
-
+	
 	/*
 	 * find an assignment of values to sudoku cells that makes the sudoku valid
 	 * 
@@ -126,36 +127,36 @@ public class Sudoku {
 	 * its original value
 	 */
 	public static boolean fillSudoku(int[][] sudoku) {
-		boolean allFilled = true;
-		int row = -1;
-		int col = -1;
+	    boolean allFilled = true;
+	    int row = -1;
+	    int col = -1;
 
-		for (int i = 0; i < 9; i++) {
-			for (int j = 0; j < 9; j++) {
-				if (sudoku[i][j] == 0) {
-					row = i;
-					col = j;
-					allFilled = false;
-					break;
-				}
+	    for (int i = 0; i < 9; i++) {
+	        for (int j = 0; j < 9; j++) {
+	            if (sudoku[i][j] == 0) {
+	                row = i;
+	                col = j;
+	                allFilled = false;
+	                break;
+	            }
+	        }
+	        if (!allFilled) {
+	            break;
+	        }
+	    }
+	    if (allFilled) {
+	        return checkSudoku(sudoku, false);
+	    }
 
-			}
-			if (!allFilled) {
-				break;
-			}
-		}
-
-		if (checkSudoku(sudoku, false)) {
-			for (int i = 1; i < 10; i++) {
-				sudoku[row][col] = i;
-
-				fillSudoku(sudoku);
-
-			}
-			
-		}
-		sudoku[row][col] = 0;
-		System.out.print(toString(sudoku, false));
-		return true;
+	    for (int num = 1; num <= 9; num++) {
+	        if (checkSudoku(sudoku, false)) {
+	            sudoku[row][col] = num;
+	            if (fillSudoku(sudoku)) {
+	                return true;
+	            }
+	            sudoku[row][col] = 0; // backtrack
+	        }
+	    }
+	    return false;
 	}
 }

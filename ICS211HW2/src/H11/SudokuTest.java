@@ -154,8 +154,8 @@ public class SudokuTest {
                           {0, 0, 7,  0, 0, 0,  3, 0, 0}};
 
     testSudoku ("example 1", example1, solution1);
-  //testSudoku ("example 2", example2, solution2);
-   // testSudoku ("AI Escargot", example3, null);
+  testSudoku ("example 2", example2, solution2);
+   testSudoku ("AI Escargot", example3, null);
 
   }
 }
