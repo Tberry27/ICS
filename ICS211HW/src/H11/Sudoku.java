@@ -116,7 +116,15 @@ public class Sudoku {
 		}
 		return "illegal sudoku";
 	}
-	
+	public static boolean Gaps (int[] [] sudoku) {
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				if(sudoku[i][j]==0) {
+					return true;
+				}
+			}
+		}return false;
+	}
 	/*
 	 * find an assignment of values to sudoku cells that makes the sudoku valid
 	 * 
@@ -145,7 +153,7 @@ public class Sudoku {
 	        }
 	    }
 	    if (allFilled) {
-	        return checkSudoku(sudoku, false);
+	        return checkSudoku(sudoku, true);
 	    }
 
 	    for (int num = 1; num <= 9; num++) {

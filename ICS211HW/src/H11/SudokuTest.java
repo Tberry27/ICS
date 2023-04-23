@@ -1,10 +1,7 @@
 package H11;
 
 /* 
- * test a Sudoku solver
- * @author	Biagioni, Edoardo
- * @date	October 23, 2013
- * @bugs	none
+ * Tanner Berry
  */
 public class SudokuTest {
 
@@ -19,14 +16,6 @@ public class SudokuTest {
     }
     return true;
   }
-
-  /* test whether two sudoku are equal.  If not, return a new sudoku
-   * that is blank where the two sudoku differ.
-   * @param the sudoku to be checked
-   * @param the solution checked
-   * @return null if the two match, and otherwise a sudoku with 0 in
-   *    every cell that differs.
-   */
   private static int [] [] sameSudoku(int [] [] sudoku, int [] [] solution)
   {
     int [] [] result = new int [9] [9];
@@ -49,13 +38,6 @@ public class SudokuTest {
     }
     return result;
   }
-
-  /* try to solve a sudoku.  If a solution is provided, also check
-   * against the solution.  Print the results.
-   * @param the name of this sudoku
-   * @param the sudoku to be solved
-   * @param the given solution, or null
-   */
   private static void testSudoku(String name,
                                  int [] [] sudoku, int [] [] solution)
   {
