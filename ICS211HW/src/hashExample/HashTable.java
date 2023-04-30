@@ -3,10 +3,12 @@ package hashExample;
 import java.util.LinkedList;
 
 public class HashTable<K, V> {
+	@SuppressWarnings("rawtypes")
 	private LinkedList[] table;
 	private int keyCollisions;
 	private int size;
 
+	@SuppressWarnings("rawtypes")
 	public HashTable(int size) {
 		table = new LinkedList[size];
 		for (int i = 0; i < size; i++) {
