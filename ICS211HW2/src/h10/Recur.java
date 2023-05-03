@@ -1,12 +1,8 @@
 package h10;
 
 public class Recur {
-
     /**
-     * A node in a singly-linked list
-     * @author         Edo Biagioni
-     * @lecture        ICS 211 Jan 27 or later
-     * @date           January 26, 2010
+     * @author    Tanner Berry
      */
 
     private static class LinkedNode {
@@ -58,7 +54,7 @@ public class Recur {
     public int halves(LinkedNode node) {
         if(node== null) {
         	return 0;
-        }else if (node.item>= 0.5) {
+        }else if (node.item >= 0.5) {
         	return 1 + halves(node.next);
         }else {
         	return 0+ halves(node.next);
@@ -85,8 +81,8 @@ public class Recur {
         if (node == null)
             throw new RuntimeException("cannot add at end of an empty linked list");
         // to do
-        if(node.next ==null) {
-        	node.next = new LinkedNode (value,null);
+        if(node.next == null) {
+        	node.next = new LinkedNode (value, null);
         }
         else {
         	addAtEnd(node.next,value);
@@ -123,17 +119,19 @@ public class Recur {
     }
 
     // same as printList, but return the result as a string
-    public String listToString(LinkedNode node) {
+   /* public String listToString(LinkedNode node) {
         if (node== null) {
         	System.out.print("");
         }else if(node.next == null){
-        	return epty stirn gand node.item
+        	return System.out.print(" "+ node.item);
+        	//epty stirn gand node.item
         }
     }
-
+*/
     // runtime exponential in n
     public static int exponential(int n) {
     	if(n<= 2) {
+    		
     		return 1;
     	}
     	return exponential(n-2)+ exponential(n-1);
@@ -155,12 +153,13 @@ public class Recur {
             totalHalves += newHalves;
             System.out.println("length of random list is " + newLength +
                                ", " + newHalves + " half or over");
+           
             if (i == 0) {
             //    System.out.println("last of random list is " + r.last(list).item);
                 System.out.print  ("list   : ");
                 r.printList(list);
-                System.out.println("again  : " + r.listToString(list));
-                System.out.println("reverse: " + r.listToString(r.reverse(list)));
+            //    System.out.println("again  : " + r.listToString(list));
+            //    System.out.println("reverse: " + r.listToString(r.reverse(list)));
             }
         }
         System.out.println("average length of random list is " +
