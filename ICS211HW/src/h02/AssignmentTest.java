@@ -1,5 +1,4 @@
 package h02;
-/*package ho2;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -54,4 +53,3 @@ void testAssignmentGetVariable() {
 }
 
 }
-*/

@@ -1,4 +1,4 @@
-/*package h06;
+package h06;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -141,4 +141,4 @@ class ICS211LinkedListTest {
 		}
 	}
 
-}*/
+}

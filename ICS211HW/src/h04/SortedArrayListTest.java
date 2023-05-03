@@ -1,4 +1,4 @@
-/*package h04;
+package h04;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -74,4 +74,3 @@ SortedArrayList myList = null;
 }
 	
 
-*/

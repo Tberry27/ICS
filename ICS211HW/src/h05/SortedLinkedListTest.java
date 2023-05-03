@@ -2,7 +2,7 @@
  * author: Tanner Berry
  * ICS 211 HW5
  */
-/*package h05;
+package h05;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
@@ -75,4 +75,4 @@ class SortedLinkedListTest {
 		assertEquals("alpha beta gamma", stringList.toString());
 	}
 
-}*/
+}
